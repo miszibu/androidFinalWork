@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:id="@+id/imglayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:layout_width="155dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/phoneNum"
+                    android:text="输入短信发送的手机号码" />
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="服务提供商号码"
+                    android:layout_width="155dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/aimPhoneNum"
+                    android:text="10086" />
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="默认信息内容"
+                    android:layout_width="155dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/messageContent"
+                    android:text="mm" />
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="已发送短信数量"
+                    android:layout_width="155dp"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:text="0条"
+                    android:id="@+id/seedMessageNum"
+                    android:enabled="false" />
+            </TableRow>
+
+            <Button
+                android:layout_width="289dp"
+                android:layout_height="wrap_content"
+                android:text="确认修改"
+                android:id="@+id/sure"
+                android:gravity="center"
+                android:background="#50bbe5"
+                android:layout_marginLeft="50dp"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="#2C2852"
+            >
+            <Button
+                android:id="@+id/historyMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="历史消息"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:drawableLeft="@drawable/message">
+            </Button>
+
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="我的设置"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:drawableLeft="@drawable/setting">
+            </Button>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

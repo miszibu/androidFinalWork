@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zibu.zibumessage.MainActivity">
+
+    <ListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#2C2852"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+            <Button
+                android:id="@+id/historyMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="历史消息"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:drawableLeft="@drawable/message">
+            </Button>
+
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="我的设置"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:drawableLeft="@drawable/setting">
+            </Button>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
